@@ -27,7 +27,9 @@ public class ApiWeb1Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		userrepository.save(new User("emailh", "password", "fname", "lname"));
+		userrepository.save(new User("emailk", "password", "fname", "lname"));
+		userrepository.save(new User("emailn", "password", "fname", "lname"));
+		userrepository.save(new User("emaib", "password", "fname", "lname"));
 		
 	}
 }

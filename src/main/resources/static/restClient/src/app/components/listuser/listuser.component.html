@@ -1,0 +1,24 @@
+<div class="container">
+
+    <table class="table table-striped">
+        <thead>
+            <th>Email</th>
+            <th>Password </th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Options </th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of users">
+                <td>{{u.emailID}}</td>
+                <td>{{u.password}}</td>
+                <td>{{u.fname}}</td>
+                <td>{{u.lname}}</td> 
+                <td><button class="btn btn-danger" (click)="deleteUser(u)">Delete</button>
+                    <button class="btn btn-primary" (click)="updateUser(u)">Edit</button></td>
+
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="newUser()">New User</button>
+</div>
